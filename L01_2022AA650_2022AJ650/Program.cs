@@ -1,4 +1,6 @@
 
+using Microsoft.EntityFrameworkCore;
+
 namespace L01_2022AA650_2022AJ650
 {
     public class Program
@@ -10,6 +12,13 @@ namespace L01_2022AA650_2022AJ650
             // Add services to the container.
 
             builder.Services.AddControllers();
+
+            // Inyección
+            //builder.Services.AddDbContext<ClaseContext>(options =>
+            //options.UseSqlServer(
+            //    builder.Configuration.GetConnectionString("DbConnection"))
+            //);
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
