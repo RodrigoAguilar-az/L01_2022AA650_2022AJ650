@@ -1,4 +1,5 @@
 
+using L01_2022AA650_2022AJ650.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace L01_2022AA650_2022AJ650
@@ -14,10 +15,10 @@ namespace L01_2022AA650_2022AJ650
             builder.Services.AddControllers();
 
             // Inyección
-            //builder.Services.AddDbContext<ClaseContext>(options =>
-            //options.UseSqlServer(
-            //    builder.Configuration.GetConnectionString("DbConnection"))
-            //);
+            builder.Services.AddDbContext<ClaseContext>(options =>
+            options.UseSqlServer(
+                builder.Configuration.GetConnectionString("DbConnection"))
+            );
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
