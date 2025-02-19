@@ -115,7 +115,7 @@ namespace L01_2022AA650_2022AJ650.Controllers
 
             pubActual.titulo = pubActualizar.titulo;
             pubActual.descripcion = pubActualizar.descripcion;
-            pubActual.usuarioId = pubActualizar.usuarioId;
+          //  pubActual.usuarioId = pubActualizar.usuarioId;
 
             _publicacionesContexto.Entry(pubActual).State = EntityState.Modified;
             _publicacionesContexto.SaveChanges();
