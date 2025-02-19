@@ -8,7 +8,7 @@ namespace L01_2022AA650_2022AJ650.Models
         public int usuarioid { get; set; }
         public int rolid { get; set; }
 
-        public string nombreusario { get; set; }
+        public string nombreUsuario { get; set; }
 
         public string clave { get; set; }
 
