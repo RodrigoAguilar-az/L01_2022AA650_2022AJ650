@@ -138,6 +138,16 @@ namespace L01_2022AA650_2022AJ650.Controllers
                 return NotFound();
             }
 
+           var comentarios = (from c in _publicacionesContexto.comentarios
+                                             where c.publicacionId == id
+                                             select c).ToList();
+
+            if (comentarios.Any())
+            {
+                _publicacionesContexto.comentarios.RemoveRange(comentarios); 
+            }
+
+
             _publicacionesContexto.Attach(publicacion); 
             _publicacionesContexto.publicaciones.Remove(publicacion);
             _publicacionesContexto.SaveChanges();
