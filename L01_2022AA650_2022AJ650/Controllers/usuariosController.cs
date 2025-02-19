@@ -64,7 +64,7 @@ namespace L01_2022AA650_2022AJ650.Controllers
             }
 
             UserActual.nombreUsuario = usarioUpdate.nombreUsuario;
-            UserActual.rolid = usarioUpdate.rolid;
+          //  UserActual.rolid = usarioUpdate.rolid;
             UserActual.nombreUsuario = usarioUpdate.nombreUsuario;
             UserActual.clave = usarioUpdate.clave;
             UserActual.nombre = usarioUpdate.nombre;

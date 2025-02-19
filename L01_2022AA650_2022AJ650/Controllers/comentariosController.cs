@@ -87,9 +87,9 @@ namespace L01_2022AA650_2022AJ650.Controllers
                 return NotFound();
             }
 
-            conActual.publicacionId = conActualizar.publicacionId;
+           // conActual.publicacionId = conActualizar.publicacionId;
             conActual.comentario = conActualizar.comentario;
-            conActual.usuarioId = conActualizar.usuarioId;
+           // conActual.usuarioId = conActualizar.usuarioId;
 
             _comentariosContexto.Entry(conActual).State = EntityState.Modified;
             _comentariosContexto.SaveChanges();
